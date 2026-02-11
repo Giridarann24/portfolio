@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giridarann K - Portfolio</title>
+
+<style>
+
+/* ===== GLOBAL STYLES ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b0b16;
+    color:white;
+}
+
+/* ===== NAVBAR ===== */
+
+nav{
+    width:100%;
+    position:fixed;
+    top:0;
+    background:#000;
+    padding:15px;
+    text-align:center;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-size:17px;
+}
+
+nav a:hover{
+    color:cyan;
+}
+
+/* ===== HEADER ===== */
+
+header{
+    height:100vh;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://cdn.pixabay.com/photo/2017/08/10/03/47/robot-2618692_1280.jpg');
+
+    background-size:cover;
+    background-position:center;
+}
+
+#particles-js{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+}
+
+.header-content{
+    position:relative;
+    z-index:10;
+}
+
+header h1{
+    font-size:50px;
+    color:cyan;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 25px;
+    border:2px solid cyan;
+    color:white;
+    text-decoration:none;
+}
+
+.btn:hover{
+    background:cyan;
+    color:black;
+}
+
+/* ===== SECTIONS ===== */
+
+section{
+    padding:100px 10%;
+}
+
+.title{
+    text-align:center;
+    color:cyan;
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+/* ===== ABOUT ===== */
+
+.about-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.about-text{
+    flex:1;
+    min-width:250px;
+}
+
+.details{
+    flex:1;
+    min-width:250px;
+    background:#111;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid cyan;
+}
+
+/* ===== SKILLS ===== */
+
+.skill{
+    margin:15px 0;
+}
+
+.bar{
+    background:#222;
+    height:10px;
+    border-radius:10px;
+}
+
+.progress{
+    height:10px;
+    background:cyan;
+}
+
+/* ===== PROJECTS ===== */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#111;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid cyan;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+/* ===== EXPERIENCE ===== */
+
+.timeline{
+    border-left:3px solid cyan;
+    padding-left:20px;
+}
+
+.event{
+    margin-bottom:20px;
+}
+
+/* ===== CONTACT ===== */
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    background:#111;
+    border:1px solid cyan;
+    color:white;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+    .about-container{
+        flex-direction:column;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header id="home">
+
+    <div id="particles-js"></div>
+
+    <div class="header-content">
+        <h1>I am Giridarann K</h1>
+        <p>3rd Year Mechatronics Engineer | Embedded Systems Enthusiast</p>
+        <a href="#about" class="btn">Know More</a>
+    </div>
+
+</header>
+
+<section id="about">
+<h2 class="title">About Me</h2>
+
+<div class="about-container">
+
+<div class="about-text">
+<p>
+I am <b>Giridarann K</b>, a 3rd year Mechatronics Engineering student at  
+<b>Kumaraguru College of Technology</b>.  
+
+Currently pursuing internship at <b>FORGE</b> to gain hands-on experience in  
+hardware systems and embedded technology till <b>July 2025</b>.
+
+I have strong passion towards robotics, automation and embedded systems.  
+I have built multiple robots and participated in national level competitions.
+</p>
+</div>
+
+<div class="details">
+<h3>Personal Details</h3>
+<p>Name: Giridarann K</p>
+<p>College: Kumaraguru College of Technology</p>
+<p>Department: Mechatronics Engineering</p>
+<p>Internship: FORGE</p>
+<p>End Date: July 2025</p>
+</div>
+
+</div>
+</section>
+
+<section id="skills">
+<h2 class="title">Technical Skills</h2>
+
+<div class="skill">SolidWorks Designing
+<div class="bar"><div class="progress" style="width:90%"></div></div></div>
+
+<div class="skill">Arduino Programming
+<div class="bar"><div class="progress" style="width:80%"></div></div></div>
+
+<div class="skill">ESP32 Development
+<div class="bar"><div class="progress" style="width:85%"></div></div></div>
+
+<div class="skill">STM32 Blue Pill
+<div class="bar"><div class="progress" style="width:70%"></div></div></div>
+
+<div class="skill">Fabrication Skills
+<div class="bar"><div class="progress" style="width:85%"></div></div></div>
+
+<div class="skill">Material Selection
+<div class="bar"><div class="progress" style="width:80%"></div></div></div>
+
+</section>
+
+<section id="projects">
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Automatic Juice Vending Machine</h3>
+<p>
+Built an automated juice vending system using PLC for precise dispensing.
+</p>
+</div>
+
+<div class="card">
+<h3>Thread Cutting Detection System</h3>
+<p>
+Designed embedded system to detect thread cut quality and RPM calculation.
+</p>
+</div>
+
+<div class="card">
+<h3>Robo Rally Bot</h3>
+<p>
+ESP32 based robotic vehicle built for competitive robotics event.
+</p>
+</div>
+
+<div class="card">
+<h3>Robo Sumo & Soccer Bots</h3>
+<p>
+Wireless robots developed using ESP32 for robotics competitions.
+</p>
+</div>
+
+<div class="card">
+<h3>Line Follower Robot</h3>
+<p>
+Represented KCT in Technoxian event at Noida with this robot.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="experience">
+<h2 class="title">Experience</h2>
+
+<div class="timeline">
+
+<div class="event">
+<h3>Internship – FORGE</h3>
+<p>Hands-on training in embedded systems and hardware (Till July 2025)</p>
+</div>
+
+<div class="event">
+<h3>Technoxian Event – Noida</h3>
+<p>Participated with Line Follower Robot at national competition.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+<h2 class="title">Contact Me</h2>
+
+<div class="details">
+<p>Email: giridarann.23mc@kct.ac.in</p>
+<p>Phone: 9865690415</p>
+<p>College: Kumaraguru College of Technology</p>
+</div>
+
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea rows="5" placeholder="Message"></textarea>
+<button class="btn">Send</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2025 Giridarann K | Digital Portfolio</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 90 },
+    "color": { "value": "#00ffff" },
+    "shape": { "type": "circle" },
+    "size": { "value": 3 },
+    "line_linked": { "enable": true, "color": "#00ffff" },
+    "move": { "enable": true, "speed": 3 }
+  }
+});
+</script>
+
+</body>
+</html>
